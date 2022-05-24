@@ -79,6 +79,7 @@ class OneFragment : Fragment() {
 
     }
 
+
     private fun setupObservers() {
         viewModel.getTrending(limit = 25).observe(viewLifecycleOwner) {
             it?.let { resource ->
